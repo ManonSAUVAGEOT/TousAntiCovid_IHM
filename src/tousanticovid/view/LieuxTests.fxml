@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tousanticovid.view.LieuxTestsController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="160.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="18.0" text="Où se faire tester ?" textFill="#2775cf" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <AnchorPane fx:id="textPane" layoutY="60.0" prefHeight="400.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="L'activation de l'application est nécessaire pour la géolocalisation." textAlignment="CENTER" wrappingWidth="380.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pour cela cliquez sur le bouton en haut à droite de votre écran." textAlignment="CENTER" wrappingWidth="370.0" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="180.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="-2.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="-2.0" prefHeight="61.0" prefWidth="406.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="geoButton" mnemonicParsing="false" onAction="#AfficheCarte" text="Se géolocaliser">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <ScrollPane fx:id="CartePane" prefHeight="385.0" prefWidth="390.0" visible="false">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="762.0" prefWidth="1002.0">
+                           <children>
+                              <ImageView fitHeight="803.0" fitWidth="1028.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/CarteTest/TestGeo.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="ptMermoz" layoutX="59.0" layoutY="164.0" mnemonicParsing="false" onAction="#AfficheInfos" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20; -fx-background-color: #00cc33;" />
+                              <Button fx:id="ptPau" layoutX="906.0" layoutY="711.0" mnemonicParsing="false" onAction="#AfficheInfos" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20; -fx-background-color: #00cc33;" />
+                              <Button fx:id="ptCentre" layoutX="811.0" layoutY="203.0" mnemonicParsing="false" onAction="#AfficheInfos" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20; -fx-background-color: #86ccf1;" />
+                              <Button fx:id="ptMagasin" layoutX="869.0" layoutY="435.0" mnemonicParsing="false" onAction="#AfficheInfos" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20; -fx-background-color: #36409a;" />
+                              <Button fx:id="ptBiocoop" layoutX="168.0" layoutY="342.0" mnemonicParsing="false" onAction="#AfficheInfos" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20; -fx-background-color: #36409a;" />
+                              <Button fx:id="ptSport" layoutX="226.0" layoutY="636.0" mnemonicParsing="false" onAction="#AfficheInfos" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20; -fx-background-color: #86ccf1;" />
+                              <Label layoutX="540.0" layoutY="474.0" text="Vous êtes ici" textFill="#f20d0d">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font></Label>
+                              <Button layoutX="570.0" layoutY="438.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #f20d0d; -fx-background-radius: 20;" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <HBox fx:id="legendeBox" alignment="CENTER" spacing="10.0" visible="false">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/CarteTest/circle-solid-green.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Lieu de test">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                        <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/CarteTest/circle-solid-%2336409a.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Magasin">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/CarteTest/circle-solid-%2386ccf1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Lieu commun">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane prefHeight="127.0" prefWidth="374.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="354.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="33.19998779296875" minHeight="10.0" prefHeight="33.19998779296875" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="45.99997749328613" minHeight="10.0" prefHeight="35.20001220703124" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="59.199987792968756" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="59.199987792968756" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="nomLabel" text="Nom Lieux">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="typeLabel" text="Type" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adresseLabel" text="adresse" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="reglesText" strokeType="OUTSIDE" strokeWidth="0.0" text="les règles à respecter" wrappingWidth="380.0" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      
+         </children>
+</AnchorPane>

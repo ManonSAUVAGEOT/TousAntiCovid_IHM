@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="Les symptômes " textFill="#2775cf" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <ScrollPane fitToWidth="true" prefHeight="720.0" prefWidth="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="387.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="16.0" layoutY="60.0" text="Quels sont les signes connus du Covid-19?" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="269.0" fitWidth="356.0" layoutX="16.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+                     <image>
+                        <Image url="@images/symptomes.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="365.0" prefHeight="27.0" prefWidth="336.0" text="Que faire en cas de symptômes?" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="392.0" prefHeight="27.0" prefWidth="308.0" text="Immédiatement: " textFill="#e12424" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="355.0">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="25.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Je m'isole" wrappingWidth="213.095703125" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="390.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="25.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Je consulte mon médecin" AnchorPane.topAnchor="420.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="26.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3) Je fais un test" AnchorPane.topAnchor="450.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#eb1d1d" layoutX="7.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Après les résultats du test:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="515.0">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="16.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si le test est négatif: J'arrête mon isolement." wrappingWidth="350.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="575.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="17.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si le test est positif: Je m'isole 7 jours." AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="550.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da2e2e" layoutX="8.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Après 7 jours d'isolement:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="610.0">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si j'ai de la fièvre:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="640.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Je poursuis mon isolement pendant 48h après la fin de la fièvre." wrappingWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="670.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Je consulte mon médecin." AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="720.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="16.0" layoutY="808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si je n'ai pas de fièvre:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="760.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="34.0" layoutY="835.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) J'arrête mon isolement." AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="790.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="36.0" layoutY="862.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Pendant une semaine j'évite les contacts avec les personnes à risques et je porte un masque." wrappingWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="820.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink layoutX="110.0" layoutY="480.0" text="Trouver le centre de test le plus proche" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="480.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

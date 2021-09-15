@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootLayout" prefHeight="720.0" prefWidth="400.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tousanticovid.view.AppActiveController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #5990dd;">
+         <items>
+            <ToggleButton fx:id="menuButton" mnemonicParsing="false" onAction="#handleMenuButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #5990dd;">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="menuIconBar" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/bars-solid.png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <Label text="#Tous Anti-Covid" textFill="WHITE">
+               <padding>
+                  <Insets left="5.0" right="60.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="ifActif" prefHeight="26.0" prefWidth="107.0" text="Désactivé" textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <CheckBox fx:id="checkActif" mnemonicParsing="false" onAction="#handleCheckBox" prefHeight="19.0" prefWidth="24.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></CheckBox>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+         </items>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </ToolBar>
+   </top>
+   <left>
+      <VBox fx:id="menu" depthTest="DISABLE" focusTraversable="true" onSwipeLeft="#closeMenu" prefHeight="680.0" prefWidth="398.0" style="-fx-background-color: white;" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <Label alignment="CENTER" text="Menu">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefHeight="0.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="-20.0" />
+               </VBox.margin>
+            </Separator>
+            <Hyperlink id="Hyper1" onAction="#showNewPage" text="Accueil" textFill="#001ba4" userData="view/Accueil.fxml">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Label text="Se protéger">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" />
+               </VBox.margin>
+            </Label>
+            <Hyperlink id="Hyper2" onAction="#showNewPage" text="Respecter les gestes barrières" textFill="#10a6d4" userData="view/GesteBarriere.fxml">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink id="Hyper2" onAction="#showNewPage" text="Suivre l'évolution de l'épidémie" textFill="#10a6d4" userData="view/Chiffres.fxml">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="20.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Label text="Se faire tester">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" />
+               </VBox.margin>
+            </Label>
+            <Hyperlink id="Hyper2" onAction="#showNewPage" text="Connaître les symptômes" textFill="#10a6d4" userData="view/Tester.fxml">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink id="Hyper2" onAction="#showNewPage" text="Où se faire tester ?" textFill="#10a6d4" userData="view/LieuxTests.fxml">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="20.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Label text="Se déclarer">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" />
+               </VBox.margin>
+            </Label>
+            <Hyperlink id="Hyper2" onAction="#showNewPage" text="Identifier un restaurant" textFill="#10a6d4" userData="view/IdentifierResto.fxml">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="20.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink id="Hyper1" onAction="#showNewPage" text="Comment utiliser Tous AntiCovid ?" textFill="#001ba4" userData="view/Aide.fxml">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink id="Hyper1" onAction="#showNewPage" text="Contacts utiles" textFill="#001ba4" userData="view/Contact.fxml">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Hyperlink>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

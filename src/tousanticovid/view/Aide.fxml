@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="38.0" text="Comment utiliser Tous Anti-Covid ?" textFill="#2775cf" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <ImageView fitHeight="134.0" fitWidth="136.0" layoutX="5.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0">
+         <image>
+            <Image url="@images/Aide/check.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="148.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activez Tous Anti-Covid pour vous identifier dans les lieux publics et connaître leurs consignes sanitaires." textAlignment="JUSTIFY" wrappingWidth="240.0" AnchorPane.leftAnchor="148.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <ImageView fitHeight="134.0" fitWidth="134.0" layoutX="5.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0">
+         <image>
+            <Image url="@images/Aide/doctor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="134.0" layoutX="5.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0">
+         <image>
+            <Image url="@images/Aide/virus.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="148.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recevez une notification si vous avez été en contact avec une personne positive au virus. Trouvez les lieux les plus proches pour vous faire dépister." textAlignment="JUSTIFY" wrappingWidth="240.0" AnchorPane.leftAnchor="148.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="148.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilisez les gestes barrières pour vous protéger et identifiez les symptômes. Restez informé sur l'évolution de l'épidémie." textAlignment="JUSTIFY" wrappingWidth="240.0" AnchorPane.leftAnchor="148.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

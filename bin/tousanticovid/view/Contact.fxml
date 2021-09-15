@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="49.0" prefWidth="400.0" AnchorPane.bottomAnchor="631.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="37.0" layoutY="10.0" text="Contacts utiles" textAlignment="CENTER" textFill="#2775cf" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="95.0" layoutY="14.0" prefHeight="22.0" prefWidth="200.0" text="Urgence-sécurité et écoute : " textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="8.0" layoutY="247.0" text="Urgence pour ma santé" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="17.0" layoutY="425.0" text="Informations" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="11.0" layoutY="492.0" text=" J’habite à l’étranger, qui appeler ?" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Text layoutX="5.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En cas de danger immédiat : " wrappingWidth="385.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="8.399999999999977">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violences sur les enfants : " wrappingWidth="385.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="4.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violences conjugales :         " wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="211.0" lineSpacing="1.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Plateforme nationale d’appui médico-psychologique pour tous les professionnels de santé : " wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si j’ai des symptômes (toux, fièvre) qui me font penser au COVID-19 :" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infos sur la COVID-19, 24h/24 et 7j/7 :" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="544.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L’Ambassade et consulat de votre lieu de résidence. Par ailleurs, le ministère met à jour régulièrement          de conseils aux voyageurs" textAlignment="JUSTIFY" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="185.0" layoutY="45.0" pickOnBounds="false" prefHeight="1.0" prefWidth="25.0" text="17">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="168.0" layoutY="78.0" text="119">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="152.0" layoutY="104.0" prefHeight="27.0" prefWidth="128.0" text="allo119.gouv.fr">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Text layoutX="16.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(ou sur le site internet :                          )" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="212.0" layoutY="212.0" text="0800 73 09 58 (n° vert)">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
+            <Hyperlink layoutX="150.0" layoutY="160.0" text="arretonslesviolences.gouv.fr">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
+            <Hyperlink layoutX="143.0" layoutY="137.0" prefHeight="23.0" prefWidth="43.0" text="3919" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
+            <Text layoutX="11.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(ou sur le site internet :                                              )" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="245.0" layoutY="456.0" prefHeight="17.0" prefWidth="163.0" text="0 800 130 000 (n° vert).">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Text layoutX="9.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infos sur la COVID-19, 24h/24 et 7j/7 :" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="245.0" layoutY="597.0" prefHeight="17.0" prefWidth="163.0" text="0 800 130 000 (n° vert).">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="312.0" layoutY="545.0" text="son site">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Text layoutX="15.0" layoutY="349.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si les symptômes s’aggravent avec des difficultés respiratoires et signes d’étouffement, j'appelle le                   ou j'envoie un message au numéro d’urgence pour les sourds et malentendants (       )." wrappingWidth="386.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="107.0" layoutY="392.0" text="114">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="228.0" layoutY="350.0" text="SAMU (15)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
